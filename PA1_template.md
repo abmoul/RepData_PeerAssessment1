@@ -153,11 +153,11 @@ activity.without.missing.data <- data.frame(steps = steps, date = data$date,
 We check there are no missing data in our new same-sized dataset:
 
 ```r
-sum(is.na(data))
+sum(is.na(activity.without.missing.data))
 ```
 
 ```
-## [1] 2304
+## [1] 0
 ```
 And we plot an histogram of the total number of steps taken each day:
 

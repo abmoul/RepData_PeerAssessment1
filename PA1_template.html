@@ -342,10 +342,10 @@ activity.without.missing.data &lt;- data.frame(steps = steps, date = data$date,
 
 <p>We check there are no missing data in our new same-sized dataset:</p>
 
-<pre><code class="r">sum(is.na(data))
+<pre><code class="r">sum(is.na(activity.without.missing.data))
 </code></pre>
 
-<pre><code>## [1] 2304
+<pre><code>## [1] 0
 </code></pre>
 
 <p>And we plot an histogram of the total number of steps taken each day:</p>
